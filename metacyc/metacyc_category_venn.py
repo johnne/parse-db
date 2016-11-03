@@ -33,7 +33,7 @@ def main():
     #make subsets as: (B,C,BC,D,BD,CD,BCD) 
     venn3(subsets=(len(B),len(C),len(BC),len(D),len(BD),len(CD),len(BCD)), set_labels=["Biosynthesis","Core","Degradation"])
     plt.title("#Pathway")
-    plt.savefig(args.outfile, dpi=300, bbox_inches="tight")
+    plt.savefig(args.outfile, dpi=300, width=150, height=150, bbox_inches="tight")
 
 
 if __name__ == '__main__':
