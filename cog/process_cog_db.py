@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import sys, pandas as pd, logging
+import sys, pandas as pd, logging, urllib
 
 def make_coginfo(fun="ftp://ftp.ncbi.nih.gov/pub/COG/COG2014/data/fun2003-2014.tab",names="ftp://ftp.ncbi.nih.gov/pub/COG/COG2014/data/cognames2003-2014.tab"): 
     try: 
