@@ -3,25 +3,24 @@
 import sys,pandas as pd, numpy as np
 from argparse import ArgumentParser
 
-def file_to_df(f):
-    hin = open(f)
+def file_to_df(infile):
     r = []
-    for line in hin:
-        if line[0]=="#": continue
-        line = line.rstrip()
-        line = line.rsplit()
-        items = [line[0],line[3],line[4],line[6],line[7],line[11],float(line[13]),int(line[17]),int(line[18])]
-        r.append(items)
-    hin.close()
+    with open(infile, 'r') as f:
+        for line in f:
+            if line[0]=="#": continue
+            line = line.rstrip()
+            line = line.rsplit()
+            items = [line[0],line[3],line[4],line[6],line[7],line[11],float(line[13]),int(line[17]),int(line[18])]
+            r.append(items)
     df = pd.DataFrame(r)
     df.columns = ["target","query_name","accession","seq_eval","seq_score","dom_eval","dom_score","from","to"]
     df.index = df["target"]
     df.drop("target",axis = 1, inplace=True)
     df[['seq_eval','seq_score','dom_eval','dom_score']] = df[['seq_eval','seq_score','dom_eval','dom_score']].apply(pd.to_numeric)
-    
     return df
 
-def checkoverlap(r):
+def checkoverlap(r,overlap_frac):
+    if overlap_frac==0: return [0]
     alis = []
     store = []
     for i in range(0,len(r)): 
@@ -39,7 +38,7 @@ def checkoverlap(r):
             if len(ali)<this_ali_len: shortest = len(ali)
             else: shortest = this_ali_len
             o = set(this_ali).intersection(set(ali))
-            if (float(len(o))/shortest)>0.1:
+            if (float(len(o))/shortest)>overlap_frac:
                 overlapping = True
                 break
                 
@@ -49,17 +48,12 @@ def checkoverlap(r):
     return store
 
 def parse_trusted(df,t):
-    trusted = pd.read_csv(args.trusted, sep="\t", index_col=0, header=None, names=["Family","Sequence","Domain"], dtype={"Sequence":np.float64,"Domain":np.float64})
+    trusted = pd.read_csv(t, sep="\t", index_col=0, header=None, names=["Family","Trusted_score"], dtype={"Sequence":np.float64,"Trusted_score":np.float64})
     ## Intersect with trusted
+    ## This means only the accessions in trusted are parsed
     ta = list(set(trusted.index).intersection(set(df.accession)))
-    tn = list(set(trusted.index).intersection(set(df.query_name)))
-    df1 = pd.merge(df,trusted.loc[ta],left_on="accession",right_index=True)
-    df2 = pd.merge(df,trusted.loc[tn],left_on="query_name",right_index=True)
-
-    dft = pd.concat([df1,df2])
-    dft.index = dft.target
-    dft.drop("target",axis=1, inplace=True)
-    parsed = dft[dft.dom_score>=dft.Domain]
+    df = pd.merge(df.loc[df.accession.isin(ta)],trusted.loc[ta],left_on="accession",right_index=True)
+    parsed = df[df.dom_score>=df.Trusted_score]
     return parsed
 
 def main():
@@ -72,9 +66,16 @@ def main():
             help="E-value to use as threshold. Defaults to 1e-5.")
     parser.add_argument("-t", "--trusted", type=str,
             help="Provide trusted score cutoffs for HMMs to parse with")
+    parser.add_argument("--overlap", type=float, default=0.0,
+            help="Allowed overlapping fraction for HMM hits on the same query. Default is 0 so only best hit is stored.")
+
     args = parser.parse_args()
-    df = file_to_df(args.infile)
+    if args.overlap>1: args.overlap = args.overlap/float(10)
     
+    ## Read results
+    df = file_to_df(args.infile)
+
+    ## Parse by trusted cutoffs if supplied, otherwise by e-value
     if args.trusted: df = parse_trusted(df,args.trusted)
     else: df = df.loc[df.seq_eval<args.evalue]
 
@@ -91,7 +92,7 @@ def main():
     for gene in multi:
         r = df.loc[gene]
         rs = r.sort_values("dom_score",ascending=False)
-        store = checkoverlap(rs)
+        store = checkoverlap(rs,args.overlap)
         d = pd.concat([d,rs.iloc[store]])
     
     ## Join multiple non-overlapping hits for each query
