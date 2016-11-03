@@ -15,6 +15,10 @@ def file_to_df(f):
     hin.close()
     df = pd.DataFrame(r)
     df.columns = ["target","query_name","accession","seq_eval","seq_score","dom_eval","dom_score","from","to"]
+    df.index = df["target"]
+    df.drop("target",axis = 1, inplace=True)
+    df[['seq_eval','seq_score','dom_eval','dom_score']] = df[['seq_eval','seq_score','dom_eval','dom_score']].apply(pd.to_numeric)
+    
     return df
 
 def checkoverlap(r):
@@ -59,7 +63,7 @@ def parse_trusted(df,t):
     return parsed
 
 def main():
-    parser = ArgumentParser(descrption='''Parses HMMER output (--tblout and --domtblout output) and reports 1 or 
+    parser = ArgumentParser(description='''Parses HMMER output (--tblout and --domtblout output) and reports 1 or 
     several non-overlapping hits matching thresholds per query''')
 
     parser.add_argument("-i", "--infile", required=True, type=str,
@@ -68,15 +72,15 @@ def main():
             help="E-value to use as threshold. Defaults to 1e-5.")
     parser.add_argument("-t", "--trusted", type=str,
             help="Provide trusted score cutoffs for HMMs to parse with")
-    
-    df = file_to_df(f)
+    args = parser.parse_args()
+    df = file_to_df(args.infile)
     
     if args.trusted: df = parse_trusted(df,args.trusted)
     else: df = df.loc[df.seq_eval<args.evalue]
 
     ## Count hits
     c = pd.DataFrame(df.groupby(level=0).count().ix[:,0])
-    
+
     ## Get queries with single hits
     single = list(c[c.query_name==1].index)
 
