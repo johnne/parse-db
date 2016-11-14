@@ -1,0 +1,109 @@
+!version: $Revision: 1.4 $
+!date: $Date: 2010/01/27 15:37:22 $
+!Mapping of COG to GO terms.
+!Michael Ashburner & Jane Lomax
+!Uses: http://www.ncbi.nlm.nih.gov/cgi-bin/COG/palox?fun=all
+!Uses: http://www.ncbi.nlm.nih.gov/cgi-bin/COG/palox?sys=all
+!Downloaded 20031103
+!
+COG:Information storage and processsing > GO:.
+COG:J Translation, ribosomal structure and biogenesis > GO:translation ; GO:0043037
+COG:J Translation, ribosomal structure and biogenesis > GO:ribosome biogenesis ; GO:0007046
+COG:J Translation, ribosomal structure and biogenesis > GO:structural constituent of ribosome ; GO:0003735
+COG:J Translation, ribosomal structure and biogenesis > GO:ribosome ; GO:0005840
+COG:J TRANSLATION FACTORS AND ENZYMES INVOLVED IN TRANSLATION > GO:translation ; GO:0043037
+COG:J TRANSLATION FACTORS AND ENZYMES INVOLVED IN TRANSLATION > GO:translation factor activity, non-nucleic acid binding ; GO:0045183
+COG:J TRANSLATION FACTORS AND ENZYMES INVOLVED IN TRANSLATION > GO:translation factor activity, nucleic acid binding ; GO:0008135
+COG:J AMINOACYL-TRNA SYNTHETASES AND ALTERNATIVE SYSTEMS FOR AMINO ACID ACTIVATION > GO:amino acid activation ; GO:0043038
+COG:J AMINOACYL-TRNA SYNTHETASES AND ALTERNATIVE SYSTEMS FOR AMINO ACID ACTIVATION > GO:tRNA ligase activity ; GO:0004812
+COG:J RIBOSOMAL PROTEINS - SMALL SUBUNIT > GO:structural constituent of ribosome ; GO:0003735
+COG:J RIBOSOMAL PROTEINS - SMALL SUBUNIT > GO:small ribosomal subunit ; GO:0015935
+COG:J RIBOSOMAL PROTEINS - LARGE SUBUNIT > GO:structural constituent of ribosome ; GO:0003735
+COG:J RIBOSOMAL PROTEINS - LARGE SUBUNIT > GO:large ribosomal subunit ; GO:0015934
+COG:K Transcription > GO:transcription ; GO:0006350
+COG:K DNA-DEPENDENT RNA POLYMERASE SUBUNITS > GO:DNA-directed RNA polymerase II, holoenzyme ; GO:0016591
+COG:K DNA-DEPENDENT RNA POLYMERASE SUBUNITS > GO:DNA-directed RNA polymerase III complex ; GO:0005666
+COG:K DNA-DEPENDENT RNA POLYMERASE SUBUNITS > GO:DNA-directed RNA polymerase I complex ; GO:0005736
+COG:K BASAL TRANSCRIPTION FACTORS > GO:general RNA polymerase II transcription factor activity ; GO:0016251
+COG:K TRANSCRIPTIONAL REGULATORS > GO:transcription regulator activity ; GO:0030528
+COG:L DNA replication, recombination and repair > GO:DNA-dependent DNA replication ; GO:0006261
+COG:L DNA replication, recombination and repair > GO:DNA recombination ; GO:0006310
+COG:L DNA replication, recombination and repair > GO:DNA repair ; GO:0006281
+COG:L BASAL REPLICATION MACHINERY > GO:DNA polymerase complex ; GO:0042575
+COG:L DNA POLYMERASE III SUBUNITS > GO:DNA polymerase III complex ; GO:0009360
+COG:Cellular processes > GO:cellular process ; GO:0009987
+COG:D Cell division and chromosome partitioning > GO:cytokinesis ; GO:0000910
+COG:D Cell division and chromosome partitioning > GO:chromosome segregation ; GO:0007059
+COG:O Posttranslational modification, protein turnover, chaperones > GO:protein modification ; GO:0006464
+COG:O Posttranslational modification, protein turnover, chaperones > GO:proteolysis and peptidolysis ; GO:0006508
+COG:M Cell envelope biogenesis, outer membrane > GO:outer membrane biogenesis (sensu Gram-negative Bacteria) ; GO:0043165
+COG:M Cell envelope biogenesis, outer membrane > GO:cell envelope organization and biogenesis ; GO:0043163
+COG:M LIPID A BIOSYNTHESIS > GO:lipid A biosynthesis ; GO:0009245
+COG:N Cell motility and secretion > GO:cell motility ; GO:0006928
+COG:N Cell motility and secretion > GO:secretion ; GO:0046903
+COG:N FLAGELLUM STRUCTURE AND BIOGENESIS > GO:flagellum biogenesis ; GO:0009296
+COG:N FLAGELLUM STRUCTURE AND BIOGENESIS > GO:flagellum ; GO:0019861
+COG:N PREPROTEIN TRANSLOCASE SUBUNITS > GO:mitochondrial inner membrane presequence translocase complex ; GO:0005744
+COG:N PREPROTEIN TRANSLOCASE SUBUNITS > GO:mitochondrial outer membrane translocase complex ; GO:0005742
+COG:N PREPROTEIN TRANSLOCASE SUBUNITS > GO:protein translocase activity ; GO:0015450
+COG:P Inorganic ion transport and metabolism > GO:inorganic anion transport ; GO:0015698
+COG:P Inorganic ion transport and metabolism > GO:di-, tri-valent inorganic cation transport ; GO:0015674
+COG:P Inorganic ion transport and metabolism > GO:inorganic anion transporter activity ; GO:0015103
+COG:P Inorganic ion transport and metabolism > GO:di-, tri-valent inorganic cation transporter activity ; GO:0015082
+COG:P MULTISUBUNIT NA+/H+ ANTIPORTER > GO:sodium:hydrogen antiporter activity ; GO:0015385
+COG:T Signal transduction mechanisms > GO:signal transducer activity ; GO:0004871
+COG:T Signal transduction mechanisms > GO:signal transduction ; GO:0007165
+COG:Metabolism > GO:metabolism ; GO:0008152
+COG:C Energy production and conversion > GO:generation of precursor metabolites and energy ; GO:0006091
+COG:C PYRUVATE DECARBOXYLATION > GO:pyruvate decarboxylase activity ; GO:0004737
+COG:C TCA CYCLE > GO:tricarboxylic acid cycle ; GO:0006099
+COG:C GLYOXYLATE BYPASS > GO:glyoxylate cycle ; GO:0006097
+COG:C NADH:UBIQUINONE OXIDOREDUCTASE SUBUNITS > GO:NADH dehydrogenase complex (ubiquinone) ; GO:0045279
+COG:C NA+-TRANSPORTING NADH:UBIQUINONE OXIDOREDUCTASE SUBUNITS > GO:NADH dehydrogenase (ubiquinone) activity ; GO:0008137
+COG:C ARCHAEAL/VACUOLAR-TYPE H+-ATPASE SUBUNITS > GO:hydrogen-translocating V-type ATPase complex ; GO:0016471
+COG:C F0F1-TYPE ATP SYNTHASE SUBUNITS > GO:proton-transporting ATP synthase complex, catalytic core F(1) (sensu Eukaryota) ; GO:0000275
+COG:C F0F1-TYPE ATP SYNTHASE SUBUNITS > GO:proton-transporting ATP synthase complex, coupling factor F(o) (sensu Eukaryota) ; GO:0000276
+COG:G Carbohydrate transport and metabolism > GO:carbohydrate transport ; GO:0008643
+COG:G Carbohydrate transport and metabolism > GO:carbohydrate metabolism ; GO:0005975
+COG:G GLYCOLYSIS > GO:glycolysis ; GO:0006096
+COG:G GLUCONEOGENESIS > GO:gluconeogenesis ; GO:0006094
+COG:G PENTOSE PHOSPHATE PATHWAY > GO:pentose-phosphate shunt ; GO:0006098
+COG:G ENTNER-DOUDOROFF PATHWAY > GO:Entner-Doudoroff pathway ; GO:0009255
+COG:E Amino acid transport and metabolism > GO:amino acid transport ; GO:0006865
+COG:E Amino acid transport and metabolism > GO:amino acid metabolism ; GO:0006520
+COG:E ARGININE BIOSYNTHESIS > GO:arginine biosynthesis ; GO:0006526
+COG:E PHENYLALANINE/TYROSINE BIOSYNTHESIS > GO:aromatic amino acid family biosynthesis ; GO:0009073
+COG:E TRYPTOPHAN BIOSYNTHESIS > GO:tryptophan biosynthesis ; GO:0000162
+COG:E THREONINE BIOSYNTHESIS > GO:threonine biosynthesis ; GO:0009088
+COG:E ISOLEUCINE BIOSYNTHESIS > GO:isoleucine biosynthesis ; GO:0009097
+COG:E VALINE BIOSYNTHESIS > GO:valine biosynthesis ; GO:0009099
+COG:E LEUCINE BIOSYNTHESIS > GO:leucine biosynthesis ; GO:0009098
+COG:E METHIONINE BIOSYNTHESIS > GO:methionine biosynthesis ; GO:0009086
+COG:E PROLINE BIOSYNTHESIS > GO:proline biosynthesis ; GO:0006561
+COG:E HISTIDINE BIOSYNTHESIS > GO:histidine biosynthesis ; GO:0000105
+COG:F Nucleotide transport and metabolism > GO:nucleotide transport ; GO:0006862
+COG:F Nucleotide transport and metabolism > GO:nucleotide metabolism ; GO:0009117
+COG:F PURINE BIOSYNTHESIS > GO:purine base biosynthesis ; GO:0009113
+COG:F PURINE SALVAGE > GO:purine ribonucleoside salvage ; GO:0006166
+COG:F PYRIMIDINE BIOSYNTHESIS > GO:pyrimidine base biosynthesis ; GO:0019856
+COG:F PYRIMIDINE SALVAGE > GO:pyrimidine salvage ; GO:0008655
+COG:F THYMIDYLATE BIOSYNTHESIS > GO:thymidine biosynthesis ; GO:0046105
+COG:H Coenzyme metabolism > GO:coenzyme metabolism ; GO:0006732
+COG:H HEME BIOSYNTHESIS > GO:heme biosynthesis ; GO:0006783
+COG:H RIBOFLAVIN BIOSYNTHESIS > GO:riboflavin biosynthesis ; GO:0009231
+COG:H FAD BIOSYNTHESIS > GO:FAD biosynthesis ; GO:0006747
+COG:H BIOTIN BIOSYNTHESIS > GO:biotin biosynthesis ; GO:0009102
+COG:H NAD BIOSYNTHESIS > GO:NAD biosynthesis ; GO:0009435
+COG:H UBIQUINONE BIOSYNTHESIS > GO:ubiquinone biosynthesis ; GO:0006744
+COG:H MENAQUINONE BIOSYNTHESIS > GO:menaquinone biosynthesis ; GO:0009234
+COG:H THIAMINE BIOSYNTHESIS > GO:thiamin biosynthesis ; GO:0009228
+COG:H PYRIDOXAL PHOSPHATE BIOSYNTHESIS > GO:pyridoxal phosphate biosynthesis ; GO:0042823
+COG:H COBALAMIN BIOSYNTHESIS > GO:cobalamin biosynthesis ; GO:0009236
+COG:H COENZYME A BIOSYNTHESIS > GO:coenzyme A biosynthesis ; GO:0015937
+COG:I Lipid metabolism > GO:lipid metabolism ; GO:0006629
+COG:I FATTY ACID BIOSYNTHESIS > GO:fatty acid biosynthesis ; GO:0006633
+COG:I DEOXYXYLULOSE PATHWAY OF TERPENOID BIOSYNTHESIS > GO:terpenoid biosynthesis ; GO:0016114
+COG:Q Secondary metabolites biosynthesis, transport and catabolism > GO:secondary metabolism ; GO:0019748
+COG:Poorly characterized > GO:.
+COG:R General function prediction only > GO:.
+COG:S Function unknown > GO:molecular function unknown ; GO:0005554
