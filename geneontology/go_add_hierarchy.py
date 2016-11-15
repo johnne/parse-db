@@ -32,7 +32,7 @@ def get_name(term,df):
     except IndexError: return term
 
 def write_hierarchy(df,graph):
-    sys.stdout.write("term"+"\t"+"name"+"\t"+"hierarchy\n")
+    sys.stdout.write("term"+"\t"+"name"+"\t"+"parent_names"+"\t"+"parent_ids\n")
     for term in graph:
         name = get_name(term,df)
         paths = find_all_parents(graph,term,'root')
@@ -41,7 +41,7 @@ def write_hierarchy(df,graph):
             path.reverse()
             names = []
             for item in path: names.append(get_name(item,df))
-            sys.stdout.write(term+"\t"+name+"\t"+"|".join(names)+"\n")            
+            sys.stdout.write(term+"\t"+name+"\t"+"|".join(names)+"\t"+"|".join(path)+"\n")
 
 def main():
     parser = ArgumentParser()
@@ -55,7 +55,7 @@ def main():
     df = pd.read_csv(args.infile, header=0, sep="\t",names=["term","name","parent"])
     logging.info("Read table with "+str(len(df))+" rows")
     if args.goids: 
-        df = df.loc[df.term.isin(args.goids)]
+        df = df.loc[(df.term.isin(args.goids)) | (df.parent.isin(args.goids))]
         logging.info("Trimmed table to "+str(len(df))+" rows")
 
     graph = make_graph(df)
