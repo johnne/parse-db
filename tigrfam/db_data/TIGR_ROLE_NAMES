@@ -1,0 +1,232 @@
+role_id:	100	mainrole:	Central intermediary metabolism
+role_id:	100	sub1role:	Amino sugars
+role_id:	102	mainrole:	Central intermediary metabolism
+role_id:	102	sub1role:	Other
+role_id:	103	mainrole:	Central intermediary metabolism
+role_id:	103	sub1role:	Phosphorus compounds
+role_id:	104	mainrole:	Central intermediary metabolism
+role_id:	104	sub1role:	Polyamine biosynthesis
+role_id:	105	mainrole:	Energy metabolism
+role_id:	105	sub1role:	Biosynthesis and degradation of polysaccharides
+role_id:	106	mainrole:	Central intermediary metabolism
+role_id:	106	sub1role:	Sulfur metabolism
+role_id:	108	mainrole:	Energy metabolism
+role_id:	108	sub1role:	Aerobic
+role_id:	109	mainrole:	Energy metabolism
+role_id:	109	sub1role:	Amino acids and amines
+role_id:	110	mainrole:	Energy metabolism
+role_id:	110	sub1role:	Anaerobic
+role_id:	111	mainrole:	Energy metabolism
+role_id:	111	sub1role:	ATP-proton motive force interconversion
+role_id:	112	mainrole:	Energy metabolism
+role_id:	112	sub1role:	Electron transport
+role_id:	113	mainrole:	Energy metabolism
+role_id:	113	sub1role:	Entner-Doudoroff
+role_id:	114	mainrole:	Energy metabolism
+role_id:	114	sub1role:	Fermentation
+role_id:	116	mainrole:	Energy metabolism
+role_id:	116	sub1role:	Glycolysis/gluconeogenesis
+role_id:	117	mainrole:	Energy metabolism
+role_id:	117	sub1role:	Pentose phosphate pathway
+role_id:	118	mainrole:	Energy metabolism
+role_id:	118	sub1role:	Pyruvate dehydrogenase
+role_id:	119	mainrole:	Energy metabolism
+role_id:	119	sub1role:	Sugars
+role_id:	120	mainrole:	Energy metabolism
+role_id:	120	sub1role:	TCA cycle
+role_id:	121	mainrole:	Fatty acid and phospholipid metabolism
+role_id:	121	sub1role:	Other
+role_id:	122	mainrole:	Purines, pyrimidines, nucleosides, and nucleotides
+role_id:	122	sub1role:	Other
+role_id:	123	mainrole:	Purines, pyrimidines, nucleosides, and nucleotides
+role_id:	123	sub1role:	2'-Deoxyribonucleotide metabolism
+role_id:	124	mainrole:	Purines, pyrimidines, nucleosides, and nucleotides
+role_id:	124	sub1role:	Nucleotide and nucleoside interconversions
+role_id:	125	mainrole:	Purines, pyrimidines, nucleosides, and nucleotides
+role_id:	125	sub1role:	Purine ribonucleotide biosynthesis
+role_id:	126	mainrole:	Purines, pyrimidines, nucleosides, and nucleotides
+role_id:	126	sub1role:	Pyrimidine ribonucleotide biosynthesis
+role_id:	127	mainrole:	Purines, pyrimidines, nucleosides, and nucleotides
+role_id:	127	sub1role:	Salvage of nucleosides and nucleotides
+role_id:	129	mainrole:	Regulatory functions
+role_id:	129	sub1role:	Other
+role_id:	130	mainrole:	DNA metabolism
+role_id:	130	sub1role:	Other
+role_id:	131	mainrole:	DNA metabolism
+role_id:	131	sub1role:	Degradation of DNA
+role_id:	132	mainrole:	DNA metabolism
+role_id:	132	sub1role:	DNA replication, recombination, and repair
+role_id:	133	mainrole:	Transcription
+role_id:	133	sub1role:	Other
+role_id:	134	mainrole:	Transcription
+role_id:	134	sub1role:	Degradation of RNA
+role_id:	135	mainrole:	Transcription
+role_id:	135	sub1role:	DNA-dependent RNA polymerase
+role_id:	136	mainrole:	Protein synthesis
+role_id:	136	sub1role:	Other
+role_id:	137	mainrole:	Protein synthesis
+role_id:	137	sub1role:	tRNA aminoacylation
+role_id:	138	mainrole:	Protein fate
+role_id:	138	sub1role:	Degradation of proteins, peptides, and glycopeptides
+role_id:	140	mainrole:	Protein fate
+role_id:	140	sub1role:	Protein modification and repair
+role_id:	141	mainrole:	Transport and binding proteins
+role_id:	141	sub1role:	Unknown substrate
+role_id:	142	mainrole:	Transport and binding proteins
+role_id:	142	sub1role:	Amino acids, peptides and amines
+role_id:	143	mainrole:	Transport and binding proteins
+role_id:	143	sub1role:	Anions
+role_id:	144	mainrole:	Transport and binding proteins
+role_id:	144	sub1role:	Carbohydrates, organic alcohols, and acids
+role_id:	145	mainrole:	Transport and binding proteins
+role_id:	145	sub1role:	Cations and iron carrying compounds
+role_id:	146	mainrole:	Transport and binding proteins
+role_id:	146	sub1role:	Nucleosides, purines and pyrimidines
+role_id:	147	mainrole:	Transport and binding proteins
+role_id:	147	sub1role:	Other
+role_id:	149	mainrole:	Cellular processes
+role_id:	149	sub1role:	Adaptations to atypical conditions
+role_id:	152	mainrole:	Mobile and extrachromosomal element functions
+role_id:	152	sub1role:	Prophage functions
+role_id:	154	mainrole:	Mobile and extrachromosomal element functions
+role_id:	154	sub1role:	Transposon functions
+role_id:	156	mainrole:	Hypothetical proteins
+role_id:	156	sub1role:	Conserved
+role_id:	157	mainrole:	Unknown function
+role_id:	157	sub1role:	General
+role_id:	158	mainrole:	Protein synthesis
+role_id:	158	sub1role:	Ribosomal proteins: synthesis and modification
+role_id:	159	mainrole:	Energy metabolism
+role_id:	159	sub1role:	Methanogenesis
+role_id:	160	mainrole:	Central intermediary metabolism
+role_id:	160	sub1role:	Nitrogen metabolism
+role_id:	161	mainrole:	Amino acid biosynthesis
+role_id:	161	sub1role:	Histidine family
+role_id:	162	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	162	sub1role:	Thiamine
+role_id:	163	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	163	sub1role:	Pyridine nucleotides
+role_id:	164	mainrole:	Energy metabolism
+role_id:	164	sub1role:	Photosynthesis
+role_id:	165	mainrole:	Transcription
+role_id:	165	sub1role:	Transcription factors
+role_id:	166	mainrole:	Transcription
+role_id:	166	sub1role:	RNA processing
+role_id:	168	mainrole:	Protein synthesis
+role_id:	168	sub1role:	tRNA and rRNA base modification
+role_id:	169	mainrole:	Protein synthesis
+role_id:	169	sub1role:	Translation factors
+role_id:	170	mainrole:	DNA metabolism
+role_id:	170	sub1role:	Chromosome-associated proteins
+role_id:	176	mainrole:	Fatty acid and phospholipid metabolism
+role_id:	176	sub1role:	Biosynthesis
+role_id:	177	mainrole:	Fatty acid and phospholipid metabolism
+role_id:	177	sub1role:	Degradation
+role_id:	179	mainrole:	Central intermediary metabolism
+role_id:	179	sub1role:	Nitrogen fixation
+role_id:	180	mainrole:	Energy metabolism
+role_id:	180	sub1role:	Chemoautotrophy
+role_id:	182	mainrole:	Transport and binding proteins
+role_id:	182	sub1role:	Porins
+role_id:	183	mainrole:	DNA metabolism
+role_id:	183	sub1role:	Restriction/modification
+role_id:	184	mainrole:	Energy metabolism
+role_id:	184	sub1role:	Other
+role_id:	185	mainrole:	Unclassified
+role_id:	185	sub1role:	Role category not yet assigned
+role_id:	186	mainrole:	Mobile and extrachromosomal element functions
+role_id:	186	sub1role:	Plasmid functions
+role_id:	187	mainrole:	Cellular processes
+role_id:	187	sub1role:	Pathogenesis
+role_id:	188	mainrole:	Cellular processes
+role_id:	188	sub1role:	Chemotaxis and motility
+role_id:	189	mainrole:	Protein fate
+role_id:	189	sub1role:	Other
+role_id:	191	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	191	sub1role:	Chlorophyll and bacteriochlorphyll
+role_id:	261	mainrole:	Regulatory functions
+role_id:	261	sub1role:	DNA interactions
+role_id:	262	mainrole:	Regulatory functions
+role_id:	262	sub1role:	RNA interactions
+role_id:	263	mainrole:	Regulatory functions
+role_id:	263	sub1role:	Protein interactions
+role_id:	264	mainrole:	Regulatory functions
+role_id:	264	sub1role:	Small molecule interactions
+role_id:	698	mainrole:	Central intermediary metabolism
+role_id:	698	sub1role:	One-carbon metabolism
+role_id:	699	mainrole:	Signal transduction
+role_id:	699	sub1role:	Two-component systems
+role_id:	69	mainrole:	Amino acid biosynthesis
+role_id:	69	sub1role:	Other
+role_id:	700	mainrole:	Signal transduction
+role_id:	700	sub1role:	PTS
+role_id:	702	mainrole:	Cellular processes
+role_id:	702	sub1role:	Conjugation
+role_id:	703	mainrole:	Unknown function
+role_id:	703	sub1role:	Enzymes of unknown specificity
+role_id:	704	mainrole:	Hypothetical proteins
+role_id:	704	sub1role:	Domain
+role_id:	705	mainrole:	Cellular processes
+role_id:	705	sub1role:	Sporulation and germination
+role_id:	706	mainrole:	Cellular processes
+role_id:	706	sub1role:	Biosynthesis of natural products
+role_id:	707	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	707	sub1role:	Siderophores
+role_id:	708	mainrole:	Mobile and extrachromosomal element functions
+role_id:	708	sub1role:	Other
+role_id:	70	mainrole:	Amino acid biosynthesis
+role_id:	70	sub1role:	Aromatic amino acid family
+role_id:	710	mainrole:	Signal transduction
+role_id:	710	sub1role:	Other
+role_id:	71	mainrole:	Amino acid biosynthesis
+role_id:	71	sub1role:	Aspartate family
+role_id:	73	mainrole:	Amino acid biosynthesis
+role_id:	73	sub1role:	Glutamate family
+role_id:	74	mainrole:	Amino acid biosynthesis
+role_id:	74	sub1role:	Pyruvate family
+role_id:	75	mainrole:	Amino acid biosynthesis
+role_id:	75	sub1role:	Serine family
+role_id:	76	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	76	sub1role:	Other
+role_id:	77	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	77	sub1role:	Biotin
+role_id:	78	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	78	sub1role:	Folic acid
+role_id:	79	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	79	sub1role:	Heme, porphyrin, and cobalamin
+role_id:	80	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	80	sub1role:	Lipoate
+role_id:	81	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	81	sub1role:	Menaquinone and ubiquinone
+role_id:	82	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	82	sub1role:	Molybdopterin
+role_id:	83	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	83	sub1role:	Pantothenate and coenzyme A
+role_id:	84	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	84	sub1role:	Pyridoxine
+role_id:	85	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	85	sub1role:	Riboflavin, FMN, and FAD
+role_id:	86	mainrole:	Biosynthesis of cofactors, prosthetic groups, and carriers
+role_id:	86	sub1role:	Glutathione and analogs
+role_id:	88	mainrole:	Cell envelope
+role_id:	88	sub1role:	Other
+role_id:	89	mainrole:	Cell envelope
+role_id:	89	sub1role:	Biosynthesis and degradation of murein sacculus and peptidoglycan
+role_id:	90	mainrole:	Cell envelope
+role_id:	90	sub1role:	Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+role_id:	91	mainrole:	Cell envelope
+role_id:	91	sub1role:	Surface structures
+role_id:	92	mainrole:	Cellular processes
+role_id:	92	sub1role:	Other
+role_id:	93	mainrole:	Cellular processes
+role_id:	93	sub1role:	Cell division
+role_id:	94	mainrole:	Cellular processes
+role_id:	94	sub1role:	Toxin production and resistance
+role_id:	95	mainrole:	Protein fate
+role_id:	95	sub1role:	Protein folding and stabilization
+role_id:	96	mainrole:	Cellular processes
+role_id:	96	sub1role:	Detoxification
+role_id:	97	mainrole:	Protein fate
+role_id:	97	sub1role:	Protein and peptide secretion and trafficking
+role_id:	98	mainrole:	Cellular processes
+role_id:	98	sub1role:	DNA transformation
